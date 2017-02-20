@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Notes</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <style>
+        .active {
+            /*text-decoration: none;*/
+            /*color: #888;*/
+        }
+    </style>
 </head>
-<body>
+
+<body>123
     <div id='root'></div>
 
     <script type="text/javascript">
-        window.myurl = "https://bitrix1.github.io/04-context"
+        // window.myurl = "http://localhost:8080"
+
+        (function () {
+            (function (w) {
+                w.EOD =
+                    {
+                        myurl: "/delete_folder/files_generator.php",
+                        files: { count: 0, pageLimit: [0, 5], pageNum: 5, files: [{ "dir": "Bp53063", "bp": "Bp53063", bpname: "", "filename": "log2.log", "filetime": 1484390043, "size": 0, "type": "LOG", "parrent": "Bp53063" }] }
+                    }
+                // console.log("w",w)
+            } (window))
+        })()
+        // window.EOD = {
+        //     myurl: "http://localhost:8080",
+        //     files: { count: 0, pageLimit: [0, 5], pageNum: 5, files: [{ "dir": "Bp53063", "bp": "Bp53063", bpname: "", "filename": "log2.log", "filetime": 1484390043, "size": 0, "type": "LOG", "parrent": "Bp53063" }] }
+        // };
+
+        // var f = function () {
+        //     (function (d, s, id) {
+        //         var js, fjs = d.getElementsByTagName(s)[0];
+        //         if (d.getElementById(id)) return;
+        //         js = d.createElement(s); js.id = id;
+        //         js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+        //         fjs.parentNode.insertBefore(js, fjs);
+        //     } (document, 'script', 'facebook-jssdk'));
+        // }
     </script>
     <script type="text/javascript" src="build/bundle.js"></script>
 </body>
+
 </html>
